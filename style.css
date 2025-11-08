@@ -341,10 +341,11 @@ body {
     font-weight: bold;
     font-size: 12px;
     box-shadow: 0 4px 15px rgba(0, 184, 148, 0.4);
-    animation: float 3s ease-in-out infinite;
+    /* Use a smaller float animation for badges to avoid interfering with hero float */
+    animation: float-small 3s ease-in-out infinite;
 }
 
-@keyframes float {
+@keyframes float-small {
     0%, 100% { transform: translateY(0px); }
     50% { transform: translateY(-5px); }
 }
@@ -2482,8 +2483,6 @@ body {
         padding: 20px 10px;
         margin: 0 10px;
     }
-        min-height: 44px;
-    }
     
     .info-icon {
         font-size: 1.5rem;
@@ -2549,3 +2548,22 @@ html {
 .fade-in-up {
     animation: fadeInUp 0.6s ease-out;
 }
+
+/* Accessibility: visible focus styles for keyboard users */
+/* Keep them subtle but highly visible */
+a:focus,
+button:focus,
+.nav-link:focus,
+.hamburger:focus,
+.btn:focus,
+.submit-btn:focus,
+.product-button:focus,
+.social-icon:focus,
+.check-label:focus {
+    outline: 3px solid rgba(0, 102, 204, 0.85);
+    outline-offset: 3px;
+    box-shadow: 0 0 0 4px rgba(0, 102, 204, 0.12);
+}
+
+/* Prefer using :focus-visible when supported */
+:focus:not(:focus-visible) { outline: none; box-shadow: none; }
