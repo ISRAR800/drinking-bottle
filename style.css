@@ -2401,6 +2401,20 @@ body {
         font-size: 1.5rem;
     }
 
+    /* Logo sizing for PURELY SVG used in header and footer */
+    .brand-logo {
+        display: block;
+        height: 44px;
+        width: auto;
+    }
+
+    .footer-logo {
+        display: block;
+        height: 36px;
+        width: auto;
+        margin-bottom: 12px;
+    }
+
     .hamburger {
         width: 40px;
         height: 40px;
