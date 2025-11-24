@@ -14,11 +14,11 @@
 
   <!-- Text mark -->
   <g filter="url(#shadow)">
-    <text x="0" y="52" font-family="Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial" font-weight="700" font-size="48" fill="url(#g)">PURELY</text>
+    <text x="0" y="52" font-family="Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial" font-weight="700" font-size="48" fill="url(#g)" letter-spacing="-2">PURELY</text>
   </g>
 
   <!-- Water droplet accent as logo glyph on the right -->
   <g transform="translate(340,6)">
-    <path d="M20 2 C28 14 32 22 20 36 C8 22 12 14 20 2 Z" fill="url(#g)" stroke="#005fa3" stroke-width="1"/>
+    <path d="M20 2 C28 14 32 22 20 36 C8 22 12 14 20 2 Z" fill="url(#g)" stroke="#004f90" stroke-width="1.5"/>
   </g>
 </svg>

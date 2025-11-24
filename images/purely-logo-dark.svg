@@ -13,10 +13,10 @@
   </defs>
 
   <g filter="url(#shadowd)">
-    <text x="0" y="52" font-family="Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial" font-weight="700" font-size="48" fill="url(#gdark)">PURELY</text>
+    <text x="0" y="52" font-family="Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial" font-weight="700" font-size="48" fill="url(#gdark)" letter-spacing="-2">PURELY</text>
   </g>
 
   <g transform="translate(340,6)">
-    <path d="M20 2 C28 14 32 22 20 36 C8 22 12 14 20 2 Z" fill="url(#gdark)" stroke="#2a9ad9" stroke-width="1"/>
+    <path d="M20 2 C28 14 32 22 20 36 C8 22 12 14 20 2 Z" fill="url(#gdark)" stroke="#1f85c7" stroke-width="1.5"/>
   </g>
 </svg>

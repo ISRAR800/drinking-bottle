@@ -5,6 +5,7 @@ from PIL import Image
 IM_DIR = Path(__file__).parent
 WIDTHS = [320, 640, 1024]
 QUALITY = 80
+AVIF_QUALITY = 50
 
 avif_files = list(IM_DIR.glob('*.avif'))
 if not avif_files:
@@ -29,9 +30,18 @@ for p in avif_files:
                     ratio = target_w / float(w)
                     target_h = int(h * ratio)
                     resized = im.resize((target_w, target_h), Image.LANCZOS)
-                out_name = IM_DIR / f"{base}-{target_w}.webp"
-                resized.save(out_name, 'WEBP', quality=QUALITY, method=6)
-                print('Saved', out_name.name)
+                # Save WebP
+                out_webp = IM_DIR / f"{base}-{target_w}.webp"
+                resized.save(out_webp, 'WEBP', quality=QUALITY, method=6)
+                print('Saved', out_webp.name)
+                # Save AVIF (if plugin available)
+                try:
+                    out_avif = IM_DIR / f"{base}-{target_w}.avif"
+                    # Pillow with pillow-avif-plugin supports saving with quality parameter
+                    resized.save(out_avif, 'AVIF', quality=AVIF_QUALITY)
+                    print('Saved', out_avif.name)
+                except Exception as e:
+                    print('AVIF save failed for', base, target_w, '-', e)
     except Exception as e:
         print('Failed to process', p.name, '-', e)
 
