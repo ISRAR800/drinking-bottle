@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="80" viewBox="0 0 400 80" role="img" aria-labelledby="title desc">
+  <title id="title">PURELY</title>
+  <desc id="desc">PURELY logo — modern text mark with a water droplet accent</desc>
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0%" stop-color="#0077c8"/>
+      <stop offset="100%" stop-color="#00a8ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- Text mark -->
+  <g filter="url(#shadow)">
+    <text x="0" y="52" font-family="Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial" font-weight="700" font-size="48" fill="url(#g)">PURELY</text>
+  </g>
+
+  <!-- Water droplet accent as logo glyph on the right -->
+  <g transform="translate(340,6)">
+    <path d="M20 2 C28 14 32 22 20 36 C8 22 12 14 20 2 Z" fill="url(#g)" stroke="#005fa3" stroke-width="1"/>
+  </g>
+</svg>
