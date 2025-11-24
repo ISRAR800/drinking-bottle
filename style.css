@@ -807,13 +807,7 @@ body {
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-/* Hide prices and rates from UI as requested */
-.price,
-.original-price,
-.discounted-price,
-.price-section {
-    display: none !important;
-}
+/* Price markup removed from HTML; no longer hiding price selectors here. */
 
 .bottle-size {
     background: rgba(255, 255, 255, 0.1);
