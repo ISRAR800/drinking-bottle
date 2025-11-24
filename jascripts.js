@@ -1027,4 +1027,4 @@ window.addEventListener('load', () => {
     document.body.classList.add('loaded');
 });
 
-console.log('PureWater website loaded successfully! 🌊');
+console.log('PURELY website loaded successfully! 🌊');

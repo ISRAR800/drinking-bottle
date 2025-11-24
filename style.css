@@ -6,10 +6,21 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    /* Use CSS variable for font and color theme; set below in :root */
+    font-family: var(--base-font, 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial);
     line-height: 1.6;
     color: #333;
     overflow-x: hidden;
+}
+
+:root {
+    /* Brand theme colors (Aquafina-like blues). Tweak as needed */
+    --primary: #0077c8; /* main brand blue */
+    --accent: #00a8ff;  /* secondary accent */
+    --brand-gradient: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+    --muted: #666666;
+    --section-padding: 60px;
+    --base-font: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
 }
 
 .container {
@@ -20,7 +31,7 @@ body {
 
 /* Header and Navigation */
 .header {
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(10px);
     position: fixed;
     top: 0;
@@ -42,10 +53,12 @@ body {
     align-items: center;
 }
 
-.nav-logo h2 {
-    color: #0066cc;
-    font-size: 1.8rem;
-    font-weight: 700;
+/* Ensure nav logo uses primary color (heading styling handled separately) */
+
+/* Make footer links and headings use primary color for brand consistency */
+.footer .footer-section h4,
+.footer .footer-section h3 {
+    color: var(--primary);
 }
 
 .nav-menu {
@@ -63,7 +76,7 @@ body {
 }
 
 .nav-link:hover {
-    color: #0066cc;
+    color: var(--primary);
 }
 
 .nav-link::after {
@@ -73,7 +86,7 @@ body {
     left: 0;
     width: 0;
     height: 2px;
-    background: #0066cc;
+    background: var(--primary);
     transition: width 0.3s ease;
 }
 
@@ -97,11 +110,11 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #0066cc 0%, #00a8ff 100%);
+    background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding-top: 80px;
+    padding-top: 72px;
     position: relative;
     overflow: hidden;
 }
@@ -140,7 +153,7 @@ body {
 }
 
 .hero-text h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: white;
     margin-bottom: 1.5rem;
     font-weight: 700;
@@ -156,7 +169,7 @@ body {
 
 .cta-button {
     background: white;
-    color: #0066cc;
+    color: var(--primary);
     border: none;
     padding: 1rem 2rem;
     font-size: 1.1rem;
@@ -235,7 +248,7 @@ body {
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(90deg, #0066cc, #00a8ff);
+    background: var(--brand-gradient);
 }
 
 .product-card:hover {
@@ -265,7 +278,7 @@ body {
 }
 
 .product-button {
-    background: linear-gradient(135deg, #0066cc, #00a8ff);
+    background: var(--brand-gradient);
     color: white;
     border: none;
     padding: 0.8rem 1.5rem;
@@ -346,7 +359,7 @@ body {
     position: absolute;
     top: -8px;
     right: 15px;
-    background: linear-gradient(45deg, #00b894, #00cec9);
+    background: linear-gradient(45deg, var(--accent), var(--primary));
     color: white;
     padding: 8px 15px;
     border-radius: 20px;
@@ -790,8 +803,16 @@ body {
 .price {
     font-size: 2rem;
     font-weight: bold;
-    color: #00cec9;
+    color: var(--accent);
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Hide prices and rates from UI as requested */
+.price,
+.original-price,
+.discounted-price,
+.price-section {
+    display: none !important;
 }
 
 .bottle-size {
@@ -803,7 +824,7 @@ body {
 }
 
 .btn-pakistani {
-    background: linear-gradient(45deg, #00cec9, #55a3ff);
+    background: linear-gradient(45deg, var(--accent), var(--primary));
     color: white;
     border: none;
     padding: 15px 25px;
@@ -1093,7 +1114,7 @@ body {
 }
 
 .btn-school {
-    background: linear-gradient(45deg, #00cec9, #55a3ff);
+    background: linear-gradient(45deg, var(--accent), var(--primary));
     color: white;
     border: none;
     padding: 12px 20px;
@@ -1237,8 +1258,8 @@ body {
 
 /* Check Button Features Section */
 .check-features-section {
-    padding: 80px 0;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: var(--section-padding) 0;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
     color: white;
 }
 
@@ -1736,8 +1757,8 @@ body {
 
 /* Sales & Offers Section */
 .sales-offers {
-    padding: 5rem 0;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: var(--section-padding) 0;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
     color: white;
 }
 
@@ -1912,7 +1933,7 @@ body {
 
 /* Features Section */
 .features {
-    padding: 5rem 0;
+    padding: var(--section-padding) 0;
     background: white;
 }
 
@@ -2611,7 +2632,7 @@ body {
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.35) 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.35) 100%);
     pointer-events: none;
     border-radius: 0 0 0 0;
     z-index: 1;
@@ -2620,8 +2641,9 @@ body {
 /* Reduce overlay intensity on small screens */
 @media (max-width: 768px) {
     .hero-overlay {
-        background: linear-gradient(180deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.25) 100%);
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.25) 100%);
     }
+
     .hero-image .water-bottle {
         max-width: 360px;
         border-radius: 16px;
