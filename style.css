@@ -2414,10 +2414,10 @@ body {
 
     /* Unified class for the user-supplied PURELY raster logo used in header/footer */
     .purely-logo {
+        width: 180px;
+        /* Size adjust karein */
+        height: auto;
         display: block;
-        height: 44px;
-        /* header default */
-        width: auto;
         object-fit: contain;
     }
 
