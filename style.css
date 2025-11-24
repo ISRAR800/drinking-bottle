@@ -15,8 +15,10 @@ body {
 
 :root {
     /* Brand theme colors (Aquafina-like blues). Tweak as needed */
-    --primary: #0077c8; /* main brand blue */
-    --accent: #00a8ff;  /* secondary accent */
+    --primary: #0077c8;
+    /* main brand blue */
+    --accent: #00a8ff;
+    /* secondary accent */
     --brand-gradient: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
     --muted: #666666;
     --section-padding: 60px;
@@ -2400,6 +2402,14 @@ body {
         display: block;
         height: 44px;
         width: auto;
+    }
+
+    /* Raster logo (user-supplied) sizing */
+    .brand-logo-img {
+        display: block;
+        height: 44px;
+        width: auto;
+        object-fit: contain;
     }
 
     .footer-logo {
