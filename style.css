@@ -2412,6 +2412,15 @@ body {
         object-fit: contain;
     }
 
+    /* Unified class for the user-supplied PURELY raster logo used in header/footer */
+    .purely-logo {
+        display: block;
+        height: 44px;
+        /* header default */
+        width: auto;
+        object-fit: contain;
+    }
+
     .footer-logo {
         display: block;
         height: 36px;
@@ -2424,6 +2433,12 @@ body {
         height: 36px;
         width: auto;
         object-fit: contain;
+        margin-bottom: 12px;
+    }
+
+    /* Footer-specific sizing for the unified logo class */
+    .footer .purely-logo {
+        height: 36px;
         margin-bottom: 12px;
     }
 
