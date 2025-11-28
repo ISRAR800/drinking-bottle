@@ -1,20 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PURELY - Premium Drinking Water</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="description"
+        content="PureWater — premium drinking water. Filtered, mineral-enhanced, and sustainably packaged. Order online for fast delivery across major Pakistani cities.">
+    <meta name="author" content="PureWater">
+    <!-- Open Graph / Social previews -->
+    <meta property="og:title" content="Pure Water - Premium Drinking Water">
+    <meta property="og:description"
+        content="Experience the refreshing purity of PureWater. Premium filtered water with fast delivery and great prices.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/ISRAR800/drinking-bottle">
+    <meta property="og:image" content="images/fdaead0bb6bcc4c14608db5aa9b07de4.png_400x400q75.avif">
+    <meta name="theme-color" content="#0066cc">
+    <link rel="icon" href="images/fdaead0bb6bcc4c14608db5aa9b07de4.png_400x400q75.avif" type="image/avif">
+    <!-- Performance: preconnect to Google Fonts and load CSS non-blocking -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Load main stylesheet non-blocking: preload then swap rel to stylesheet on load -->
+    <link rel="preload" href="style.css" as="style" onload="this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="style.css">
+    </noscript>
+    <!-- Use Inter for a clean, modern look similar to Aquafina -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Preload hero LCP image (AVIF) to improve Largest Contentful Paint on supported browsers -->
+    <link rel="preload" as="image" href="images/S90b0cf51044045cf9aec75a981d8065fp.jpg_400x400q75-640.avif"
+        type="image/avif">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
     <!-- Header -->
     <header class="header">
         <nav class="navbar">
             <div class="nav-container">
                 <div class="nav-logo">
-                    <h2>PURELY</h2>
+                    <!-- Brand changed to PURELY: use user-supplied raster logo -->
+                    <a href="/" class="brand" aria-label="PURELY home">
+                        <img src="images/isroo.jpg" alt="PURELY" class="purely-logo">
+                    </a>
+                    </a>
                 </div>
                 <ul class="nav-menu">
                     <li class="nav-item">
@@ -46,12 +75,23 @@
     <section id="home" class="hero">
         <div class="hero-content">
             <div class="hero-text">
-                <h1>PURELY — Perfect Taste</h1>
-                <p>Experience the refreshing purity of premium drinking water, carefully filtered and perfected for your enjoyment.</p>
+                <h1>Pure Water, Perfect Taste</h1>
+                <p>Experience the refreshing purity of premium drinking water, carefully filtered and perfected for your
+                    enjoyment.</p>
                 <button class="cta-button">Explore Our Products</button>
             </div>
             <div class="hero-image">
-                <img src="images/S90b0cf51044045cf9aec75a981d8065fp.jpg_400x400q75.avif" alt="Premium Water Bottle" class="water-bottle">
+                <picture>
+                    <source type="image/avif"
+                        srcset="images/S90b0cf51044045cf9aec75a981d8065fp.jpg_400x400q75-320.avif 320w, images/S90b0cf51044045cf9aec75a981d8065fp.jpg_400x400q75-640.avif 640w, images/S90b0cf51044045cf9aec75a981d8065fp.jpg_400x400q75-1024.avif 1024w"
+                        sizes="(max-width:600px) 320px, 640px">
+                    <source type="image/webp"
+                        srcset="images/S90b0cf51044045cf9aec75a981d8065fp.jpg_400x400q75-320.webp 320w, images/S90b0cf51044045cf9aec75a981d8065fp.jpg_400x400q75-640.webp 640w, images/S90b0cf51044045cf9aec75a981d8065fp.jpg_400x400q75-1024.webp 1024w"
+                        sizes="(max-width:600px) 320px, 640px">
+                    <img loading="lazy" src="images/S90b0cf51044045cf9aec75a981d8065fp.jpg_400x400q75-640.webp"
+                        alt="Premium Water Bottle" class="water-bottle" width="400" height="400">
+                </picture>
+                <div class="hero-overlay" aria-hidden="true"></div>
             </div>
         </div>
     </section>
@@ -62,19 +102,46 @@
             <h2 class="section-title">Our Products</h2>
             <div class="products-grid">
                 <div class="product-card">
-                    <img src="images/S90b0cf51044045cf9aec75a981d8065fp.jpg_400x400q75.avif" alt="Premium Water" class="product-image">
+                    <picture>
+                        <source type="image/avif"
+                            srcset="images/S90b0cf51044045cf9aec75a981d8065fp.jpg_400x400q75-320.avif 320w, images/S90b0cf51044045cf9aec75a981d8065fp.jpg_400x400q75-640.avif 640w, images/S90b0cf51044045cf9aec75a981d8065fp.jpg_400x400q75-1024.avif 1024w"
+                            sizes="(max-width:600px) 320px, 640px">
+                        <source type="image/webp"
+                            srcset="images/S90b0cf51044045cf9aec75a981d8065fp.jpg_400x400q75-320.webp 320w, images/S90b0cf51044045cf9aec75a981d8065fp.jpg_400x400q75-640.webp 640w, images/S90b0cf51044045cf9aec75a981d8065fp.jpg_400x400q75-1024.webp 1024w"
+                            sizes="(max-width:600px) 320px, 640px">
+                        <img loading="lazy" src="images/S90b0cf51044045cf9aec75a981d8065fp.jpg_400x400q75-640.webp"
+                            alt="Premium Water" class="product-image" width="400" height="400">
+                    </picture>
                     <h3>Premium Water</h3>
                     <p>Pure, refreshing water perfect for everyday hydration</p>
                     <button class="product-button">Learn More</button>
                 </div>
                 <div class="product-card">
-                    <img src="images/S681aff800ffc47f996c94c32a2d61b9fu.jpg_400x400q75.avif" alt="Sparkling Water" class="product-image">
+                    <picture>
+                        <source type="image/avif"
+                            srcset="images/S681aff800ffc47f996c94c32a2d61b9fu.jpg_400x400q75-320.avif 320w, images/S681aff800ffc47f996c94c32a2d61b9fu.jpg_400x400q75-640.avif 640w, images/S681aff800ffc47f996c94c32a2d61b9fu.jpg_400x400q75-1024.avif 1024w"
+                            sizes="(max-width:600px) 320px, 640px">
+                        <source type="image/webp"
+                            srcset="images/S681aff800ffc47f996c94c32a2d61b9fu.jpg_400x400q75-320.webp 320w, images/S681aff800ffc47f996c94c32a2d61b9fu.jpg_400x400q75-640.webp 640w, images/S681aff800ffc47f996c94c32a2d61b9fu.jpg_400x400q75-1024.webp 1024w"
+                            sizes="(max-width:600px) 320px, 640px">
+                        <img loading="lazy" src="images/S681aff800ffc47f996c94c32a2d61b9fu.jpg_400x400q75-640.webp"
+                            alt="Sparkling Water" class="product-image" width="400" height="400">
+                    </picture>
                     <h3>Sparkling Water</h3>
                     <p>Refreshing bubbles with pure water essence</p>
                     <button class="product-button">Learn More</button>
                 </div>
                 <div class="product-card">
-                    <img src="images/c374054713c3d9b31640dc1270b234c3.jpg_400x400q75.avif" alt="Flavored Water" class="product-image">
+                    <picture>
+                        <source type="image/avif"
+                            srcset="images/c374054713c3d9b31640dc1270b234c3.jpg_400x400q75-320.avif 320w, images/c374054713c3d9b31640dc1270b234c3.jpg_400x400q75-640.avif 640w, images/c374054713c3d9b31640dc1270b234c3.jpg_400x400q75-1024.avif 1024w"
+                            sizes="(max-width:600px) 320px, 640px">
+                        <source type="image/webp"
+                            srcset="images/c374054713c3d9b31640dc1270b234c3.jpg_400x400q75-320.webp 320w, images/c374054713c3d9b31640dc1270b234c3.jpg_400x400q75-640.webp 640w, images/c374054713c3d9b31640dc1270b234c3.jpg_400x400q75-1024.webp 1024w"
+                            sizes="(max-width:600px) 320px, 640px">
+                        <img loading="lazy" src="images/c374054713c3d9b31640dc1270b234c3.jpg_400x400q75-640.webp"
+                            alt="Flavored Water" class="product-image" width="400" height="400">
+                    </picture>
                     <h3>Flavored Water</h3>
                     <p>Natural fruit flavors infused in pure water</p>
                     <button class="product-button">Learn More</button>
@@ -88,19 +155,28 @@
         <div class="container">
             <h2 class="section-title">🇵🇰 Pakistani Drinking Water Brands</h2>
             <p class="section-subtitle">Discover premium local water brands with authentic Pakistani quality</p>
-            
+
             <div class="pakistani-bottles-grid">
                 <!-- Nestlé Pure Life -->
                 <div class="pakistani-bottle-card">
                     <div class="bottle-image">
-                        <img src="images/2a1c841e6d34d737dd3758493486f937.jpg_400x400q75.avif" alt="Nestlé Pure Life">
+                        <picture>
+                            <source type="image/avif"
+                                srcset="images/2a1c841e6d34d737dd3758493486f937.jpg_400x400q75-320.avif 320w, images/2a1c841e6d34d737dd3758493486f937.jpg_400x400q75-640.avif 640w, images/2a1c841e6d34d737dd3758493486f937.jpg_400x400q75-1024.avif 1024w"
+                                sizes="(max-width:600px) 320px, 640px">
+                            <source type="image/webp"
+                                srcset="images/2a1c841e6d34d737dd3758493486f937.jpg_400x400q75-320.webp 320w, images/2a1c841e6d34d737dd3758493486f937.jpg_400x400q75-640.webp 640w, images/2a1c841e6d34d737dd3758493486f937.jpg_400x400q75-1024.webp 1024w"
+                                sizes="(max-width:600px) 320px, 640px">
+                            <img loading="lazy" src="images/2a1c841e6d34d737dd3758493486f937.jpg_400x400q75-640.webp"
+                                alt="Nestlé Pure Life" width="400" height="400">
+                        </picture>
                         <div class="brand-badge">🇵🇰 Local Favorite</div>
                     </div>
                     <div class="bottle-info">
                         <h3>Nestlé Pure Life</h3>
-                        <p class="bottle-description">Pakistan's most trusted mineral water brand with advanced purification</p>
+                        <p class="bottle-description">Pakistan's most trusted mineral water brand with advanced
+                            purification</p>
                         <div class="price-section">
-                            <span class="price">Rs. 45</span>
                             <span class="bottle-size">1.5L</span>
                         </div>
                         <ul class="bottle-features">
@@ -116,14 +192,22 @@
                 <!-- Aquafina -->
                 <div class="pakistani-bottle-card">
                     <div class="bottle-image">
-                        <img src="images/c374054713c3d9b31640dc1270b234c3.jpg_400x400q75.avif" alt="Aquafina Pakistan">
+                        <picture>
+                            <source type="image/avif"
+                                srcset="images/c374054713c3d9b31640dc1270b234c3.jpg_400x400q75-320.avif 320w, images/c374054713c3d9b31640dc1270b234c3.jpg_400x400q75-640.avif 640w, images/c374054713c3d9b31640dc1270b234c3.jpg_400x400q75-1024.avif 1024w"
+                                sizes="(max-width:600px) 320px, 640px">
+                            <source type="image/webp"
+                                srcset="images/c374054713c3d9b31640dc1270b234c3.jpg_400x400q75-320.webp 320w, images/c374054713c3d9b31640dc1270b234c3.jpg_400x400q75-640.webp 640w, images/c374054713c3d9b31640dc1270b234c3.jpg_400x400q75-1024.webp 1024w"
+                                sizes="(max-width:600px) 320px, 640px">
+                            <img loading="lazy" src="images/c374054713c3d9b31640dc1270b234c3.jpg_400x400q75-640.webp"
+                                alt="Aquafina Pakistan" width="400" height="400">
+                        </picture>
                         <div class="brand-badge">🇵🇰 Premium Quality</div>
                     </div>
                     <div class="bottle-info">
                         <h3>Aquafina Pakistan</h3>
                         <p class="bottle-description">Pure, clean and refreshing water from PepsiCo Pakistan</p>
                         <div class="price-section">
-                            <span class="price">Rs. 40</span>
                             <span class="bottle-size">1.5L</span>
                         </div>
                         <ul class="bottle-features">
@@ -139,14 +223,22 @@
                 <!-- Kinley -->
                 <div class="pakistani-bottle-card">
                     <div class="bottle-image">
-                        <img src="images/Sdeeedc105987481ab9aa0f884db9a7615.jpg_400x400q75.avif" alt="Kinley Pakistan">
+                        <picture>
+                            <source type="image/avif"
+                                srcset="images/Sdeeedc105987481ab9aa0f884db9a7615.jpg_400x400q75-320.avif 320w, images/Sdeeedc105987481ab9aa0f884db9a7615.jpg_400x400q75-640.avif 640w, images/Sdeeedc105987481ab9aa0f884db9a7615.jpg_400x400q75-1024.avif 1024w"
+                                sizes="(max-width:600px) 320px, 640px">
+                            <source type="image/webp"
+                                srcset="images/Sdeeedc105987481ab9aa0f884db9a7615.jpg_400x400q75-320.webp 320w, images/Sdeeedc105987481ab9aa0f884db9a7615.jpg_400x400q75-640.webp 640w, images/Sdeeedc105987481ab9aa0f884db9a7615.jpg_400x400q75-1024.webp 1024w"
+                                sizes="(max-width:600px) 320px, 640px">
+                            <img loading="lazy" src="images/Sdeeedc105987481ab9aa0f884db9a7615.jpg_400x400q75-640.webp"
+                                alt="Kinley Pakistan" width="400" height="400">
+                        </picture>
                         <div class="brand-badge">🇵🇰 Coca-Cola Brand</div>
                     </div>
                     <div class="bottle-info">
                         <h3>Kinley Pakistan</h3>
                         <p class="bottle-description">Coca-Cola's trusted water brand with perfect mineral balance</p>
                         <div class="price-section">
-                            <span class="price">Rs. 35</span>
                             <span class="bottle-size">1.5L</span>
                         </div>
                         <ul class="bottle-features">
@@ -162,14 +254,22 @@
                 <!-- Sprite Water -->
                 <div class="pakistani-bottle-card">
                     <div class="bottle-image">
-                        <img src="images/69971828af07c666854d4c1c1fdc091e.jpg_400x400q75.avif" alt="Sprite Water Pakistan">
+                        <picture>
+                            <source type="image/avif"
+                                srcset="images/69971828af07c666854d4c1c1fdc091e.jpg_400x400q75-320.avif 320w, images/69971828af07c666854d4c1c1fdc091e.jpg_400x400q75-640.avif 640w, images/69971828af07c666854d4c1c1fdc091e.jpg_400x400q75-1024.avif 1024w"
+                                sizes="(max-width:600px) 320px, 640px">
+                            <source type="image/webp"
+                                srcset="images/69971828af07c666854d4c1c1fdc091e.jpg_400x400q75-320.webp 320w, images/69971828af07c666854d4c1c1fdc091e.jpg_400x400q75-640.webp 640w, images/69971828af07c666854d4c1c1fdc091e.jpg_400x400q75-1024.webp 1024w"
+                                sizes="(max-width:600px) 320px, 640px">
+                            <img loading="lazy" src="images/69971828af07c666854d4c1c1fdc091e.jpg_400x400q75-640.webp"
+                                alt="Sprite Water Pakistan" width="400" height="400">
+                        </picture>
                         <div class="brand-badge">🇵🇰 New Launch</div>
                     </div>
                     <div class="bottle-info">
                         <h3>Sprite Water Pakistan</h3>
                         <p class="bottle-description">Fresh and pure water from the makers of Sprite</p>
                         <div class="price-section">
-                            <span class="price">Rs. 38</span>
                             <span class="bottle-size">1.5L</span>
                         </div>
                         <ul class="bottle-features">
@@ -252,21 +352,19 @@
         <div class="container">
             <h2 class="section-title">🎒 School Water Bottles</h2>
             <p class="section-subtitle">Special 10% discount for students and educational institutions</p>
-            
+
             <div class="school-bottles-grid">
                 <!-- School Bottle 1 -->
                 <div class="school-bottle-card">
                     <div class="bottle-image">
-                        <img src="images/69971828af07c666854d4c1c1fdc091e.jpg_400x400q75.avif" alt="School Water Bottle - Basic">
+                        <img loading="lazy" src="images/69971828af07c666854d4c1c1fdc091e.jpg_400x400q75.avif"
+                            alt="School Water Bottle - Basic" width="400" height="400">
                         <div class="discount-badge">-10%</div>
                     </div>
                     <div class="bottle-info">
                         <h3>Student Basic Bottle</h3>
                         <p class="bottle-description">Perfect for daily school use - durable and leak-proof</p>
-                        <div class="price-section">
-                            <span class="original-price">$15.99</span>
-                            <span class="discounted-price">$14.39</span>
-                        </div>
+                        <!-- prices removed -->
                         <ul class="bottle-features">
                             <li><span class="check-icon">✓</span> 500ml capacity</li>
                             <li><span class="check-icon">✓</span> BPA-free plastic</li>
@@ -280,16 +378,14 @@
                 <!-- School Bottle 2 -->
                 <div class="school-bottle-card">
                     <div class="bottle-image">
-                        <img src="images/9bce7a0f22af77c0a18d03082ae6de56.jpg_400x400q75.avif" alt="School Water Bottle - Premium">
+                        <img loading="lazy" src="images/9bce7a0f22af77c0a18d03082ae6de56.jpg_400x400q75.avif"
+                            alt="School Water Bottle - Premium" width="400" height="400">
                         <div class="discount-badge">-10%</div>
                     </div>
                     <div class="bottle-info">
                         <h3>Student Premium Bottle</h3>
                         <p class="bottle-description">Stainless steel bottle with temperature control</p>
-                        <div class="price-section">
-                            <span class="original-price">$24.99</span>
-                            <span class="discounted-price">$22.49</span>
-                        </div>
+                        <!-- prices removed -->
                         <ul class="bottle-features">
                             <li><span class="check-icon">✓</span> 750ml capacity</li>
                             <li><span class="check-icon">✓</span> Stainless steel</li>
@@ -303,16 +399,14 @@
                 <!-- School Bottle 3 -->
                 <div class="school-bottle-card">
                     <div class="bottle-image">
-                        <img src="images/S681aff800ffc47f996c94c32a2d61b9fu.jpg_400x400q75.avif" alt="School Water Bottle - Sports">
+                        <img loading="lazy" src="images/S681aff800ffc47f996c94c32a2d61b9fu.jpg_400x400q75.avif"
+                            alt="School Water Bottle - Sports" width="400" height="400">
                         <div class="discount-badge">-10%</div>
                     </div>
                     <div class="bottle-info">
                         <h3>Sports School Bottle</h3>
                         <p class="bottle-description">Active design for sports and outdoor activities</p>
-                        <div class="price-section">
-                            <span class="original-price">$19.99</span>
-                            <span class="discounted-price">$17.99</span>
-                        </div>
+                        <!-- prices removed -->
                         <ul class="bottle-features">
                             <li><span class="check-icon">✓</span> 600ml capacity</li>
                             <li><span class="check-icon">✓</span> Sports sipper cap</li>
@@ -326,16 +420,14 @@
                 <!-- School Bottle 4 -->
                 <div class="school-bottle-card">
                     <div class="bottle-image">
-                        <img src="images/S90b0cf51044045cf9aec75a981d8065fp.jpg_400x400q75.avif" alt="School Water Bottle - Eco">
+                        <img loading="lazy" src="images/S90b0cf51044045cf9aec75a981d8065fp.jpg_400x400q75.avif"
+                            alt="School Water Bottle - Eco" width="400" height="400">
                         <div class="discount-badge">-10%</div>
                     </div>
                     <div class="bottle-info">
                         <h3>Eco School Bottle</h3>
                         <p class="bottle-description">Environmentally friendly bottle for conscious students</p>
-                        <div class="price-section">
-                            <span class="original-price">$22.99</span>
-                            <span class="discounted-price">$20.69</span>
-                        </div>
+                        <!-- prices removed -->
                         <ul class="bottle-features">
                             <li><span class="check-icon">✓</span> 650ml capacity</li>
                             <li><span class="check-icon">✓</span> Recycled materials</li>
@@ -409,7 +501,7 @@
         <div class="container">
             <h2 class="section-title">Check Our Premium Features</h2>
             <p class="section-subtitle">Interactive checklist for quality verification</p>
-            
+
             <div class="checklist-container">
                 <div class="check-category">
                     <h3>🔍 Quality Check</h3>
@@ -537,12 +629,13 @@
         <div class="container">
             <h2 class="section-title">Logo Review & Analysis</h2>
             <p class="section-subtitle">Professional evaluation of our brand identity</p>
-            
+
             <div class="logo-review-grid">
                 <!-- Main Brand Logo -->
                 <div class="logo-review-card">
                     <div class="logo-image">
-                        <img src="images/fdaead0bb6bcc4c14608db5aa9b07de4.png_400x400q75.avif" alt="Main Brand Logo">
+                        <img loading="lazy" src="images/fdaead0bb6bcc4c14608db5aa9b07de4.png_400x400q75.avif"
+                            alt="Main Brand Logo" width="400" height="400">
                     </div>
                     <div class="logo-analysis">
                         <h3>Main Brand Logo</h3>
@@ -570,7 +663,9 @@
                         </div>
                         <div class="expert-comment">
                             <strong>Expert Comment:</strong>
-                            <p>"This logo perfectly captures the essence of premium water - clean, trustworthy, and refreshing. The color choice is psychologically optimal for building consumer confidence."</p>
+                            <p>"This logo perfectly captures the essence of premium water - clean, trustworthy, and
+                                refreshing. The color choice is psychologically optimal for building consumer
+                                confidence."</p>
                             <cite>- Sarah Johnson, Brand Design Expert</cite>
                         </div>
                     </div>
@@ -579,7 +674,8 @@
                 <!-- Alternative Logo Design -->
                 <div class="logo-review-card">
                     <div class="logo-image">
-                        <img src="images/c374054713c3d9b31640dc1270b234c3.jpg_400x400q75.avif" alt="Alternative Logo Design">
+                        <img loading="lazy" src="images/c374054713c3d9b31640dc1270b234c3.jpg_400x400q75.avif"
+                            alt="Alternative Logo Design" width="400" height="400">
                     </div>
                     <div class="logo-analysis">
                         <h3>Alternative Logo Design</h3>
@@ -607,7 +703,8 @@
                         </div>
                         <div class="expert-comment">
                             <strong>Expert Comment:</strong>
-                            <p>"A fresh take on water branding that speaks to the Instagram generation. The gradient adds depth while maintaining brand recognition."</p>
+                            <p>"A fresh take on water branding that speaks to the Instagram generation. The gradient
+                                adds depth while maintaining brand recognition."</p>
                             <cite>- Mike Chen, Digital Marketing Specialist</cite>
                         </div>
                     </div>
@@ -616,7 +713,8 @@
                 <!-- Minimalist Logo Concept -->
                 <div class="logo-review-card">
                     <div class="logo-image">
-                        <img src="images/2a1c841e6d34d737dd3758493486f937.jpg_400x400q75.avif" alt="Minimalist Logo Concept">
+                        <img loading="lazy" src="images/2a1c841e6d34d737dd3758493486f937.jpg_400x400q75.avif"
+                            alt="Minimalist Logo Concept" width="400" height="400">
                     </div>
                     <div class="logo-analysis">
                         <h3>Minimalist Logo Concept</h3>
@@ -644,8 +742,104 @@
                         </div>
                         <div class="expert-comment">
                             <strong>Expert Comment:</strong>
-                            <p>"Less is more with this design. The minimal approach creates a premium feel that works exceptionally well in international markets."</p>
+                            <p>"Less is more with this design. The minimal approach creates a premium feel that works
+                                exceptionally well in international markets."</p>
                             <cite>- Emma Rodriguez, Global Brand Consultant</cite>
+                        </div>
+                    </div>
+
+                    <!-- Additional images from attachments -->
+                    <div class="logo-review-card">
+                        <div class="logo-image">
+                            <img loading="lazy" src="C:\Users\DELL\OneDrive\Desktop\drinking bottles\images\isroo.jpg
+                                alt=" Logo Candidate S90" width="400" height="400">
+                        </div>
+                        <div class="logo-analysis">
+                            <h3>Logo Candidate — S90</h3>
+                            <div class="rating">
+                                <span class="stars">★★★☆☆</span>
+                                <span class="rating-text">3/5</span>
+                            </div>
+                            <div class="review-points">
+                                <div class="review-point positive"><span class="check-icon">✓</span><span>Vibrant
+                                        color</span></div>
+                                <div class="review-point neutral"><span class="neutral-icon">~</span><span>Better as a
+                                        product image than a logo</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="logo-review-card">
+                        <div class="logo-image">
+                            <img loading="lazy" src="images/S681aff800ffc47f996c94c32a2d61b9fu.jpg_400x400q75.avif"
+                                alt="Logo Candidate S681" width="400" height="400">
+                        </div>
+                        <div class="logo-analysis">
+                            <h3>Logo Candidate — S681</h3>
+                            <div class="rating">
+                                <span class="stars">★★★★☆</span>
+                                <span class="rating-text">4/5</span>
+                            </div>
+                            <div class="review-points">
+                                <div class="review-point positive"><span class="check-icon">✓</span><span>Strong
+                                        silhouette</span></div>
+                                <div class="review-point positive"><span class="check-icon">✓</span><span>Works well at
+                                        small sizes</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="logo-review-card">
+                        <div class="logo-image">
+                            <img loading="lazy" src="images/Sdeeedc105987481ab9aa0f884db9a7615.jpg_400x400q75.avif"
+                                alt="Logo Candidate Sdeeedc" width="400" height="400">
+                        </div>
+                        <div class="logo-analysis">
+                            <h3>Logo Candidate — Sdeeedc</h3>
+                            <div class="rating">
+                                <span class="stars">★★★☆☆</span>
+                                <span class="rating-text">3.5/5</span>
+                            </div>
+                            <div class="review-points">
+                                <div class="review-point neutral"><span class="neutral-icon">~</span><span>Nice texture;
+                                        simplify for logo use</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="logo-review-card">
+                        <div class="logo-image">
+                            <img loading="lazy" src="images/9bce7a0f22af77c0a18d03082ae6de56.jpg_400x400q75.avif"
+                                alt="Logo Candidate 9bce" width="400" height="400">
+                        </div>
+                        <div class="logo-analysis">
+                            <h3>Logo Candidate — 9bce</h3>
+                            <div class="rating">
+                                <span class="stars">★★★★☆</span>
+                                <span class="rating-text">4/5</span>
+                            </div>
+                            <div class="review-points">
+                                <div class="review-point positive"><span class="check-icon">✓</span><span>Clean lines
+                                        and good contrast</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="logo-review-card">
+                        <div class="logo-image">
+                            <img loading="lazy" src="images/69971828af07c666854d4c1c1fdc091e.jpg_400x400q75.avif"
+                                alt="Logo Candidate 6997" width="400" height="400">
+                        </div>
+                        <div class="logo-analysis">
+                            <h3>Logo Candidate — 6997</h3>
+                            <div class="rating">
+                                <span class="stars">★★★☆☆</span>
+                                <span class="rating-text">3/5</span>
+                            </div>
+                            <div class="review-points">
+                                <div class="review-point neutral"><span class="neutral-icon">~</span><span>Needs
+                                        simplification</span></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -658,22 +852,26 @@
                     <div class="recommendation-card">
                         <div class="recommendation-icon">🎯</div>
                         <h4>Brand Consistency</h4>
-                        <p>Maintain consistent logo usage across all touchpoints for maximum brand recognition and trust building.</p>
+                        <p>Maintain consistent logo usage across all touchpoints for maximum brand recognition and trust
+                            building.</p>
                     </div>
                     <div class="recommendation-card">
                         <div class="recommendation-icon">💻</div>
                         <h4>Digital Optimization</h4>
-                        <p>Optimize logo files for web, mobile, and social media platforms to ensure crisp display across all digital channels.</p>
+                        <p>Optimize logo files for web, mobile, and social media platforms to ensure crisp display
+                            across all digital channels.</p>
                     </div>
                     <div class="recommendation-card">
                         <div class="recommendation-icon">🎨</div>
                         <h4>Color Psychology</h4>
-                        <p>Leverage blue tones effectively to reinforce trust, purity, and refreshment - key attributes for water brands.</p>
+                        <p>Leverage blue tones effectively to reinforce trust, purity, and refreshment - key attributes
+                            for water brands.</p>
                     </div>
                     <div class="recommendation-card">
                         <div class="recommendation-icon">📈</div>
                         <h4>Competitive Advantage</h4>
-                        <p>Position the brand as premium and trustworthy through strategic logo placement and consistent visual identity.</p>
+                        <p>Position the brand as premium and trustworthy through strategic logo placement and consistent
+                            visual identity.</p>
                     </div>
                 </div>
             </div>
@@ -688,57 +886,49 @@
                 <div class="offer-card featured-offer">
                     <div class="offer-badge">Limited Time</div>
                     <div class="offer-image">
-                        <img src="images/S90b0cf51044045cf9aec75a981d8065fp.jpg_400x400q75.avif" alt="Family Pack Deal">
+                        <img loading="lazy" src="images/S90b0cf51044045cf9aec75a981d8065fp.jpg_400x400q75.avif"
+                            alt="Family Pack Deal" width="400" height="400">
                     </div>
                     <div class="offer-discount">25% OFF</div>
                     <h3>Family Pack Deal</h3>
                     <p>Get 25% discount on our 24-bottle family pack. Perfect for home and office use!</p>
-                    <div class="offer-price">
-                        <span class="original-price">$24.99</span>
-                        <span class="discounted-price">$18.74</span>
-                    </div>
+                    <!-- offer prices removed -->
                     <button class="offer-button">Shop Now</button>
                 </div>
                 <div class="offer-card">
                     <div class="offer-badge">New Customer</div>
                     <div class="offer-image">
-                        <img src="images/S681aff800ffc47f996c94c32a2d61b9fu.jpg_400x400q75.avif" alt="New Customer Offer">
+                        <img loading="lazy" src="images/S681aff800ffc47f996c94c32a2d61b9fu.jpg_400x400q75.avif"
+                            alt="New Customer Offer" width="400" height="400">
                     </div>
                     <div class="offer-discount">15% OFF</div>
                     <h3>First Order</h3>
                     <p>Special discount for new customers on their first purchase!</p>
-                    <div class="offer-price">
-                        <span class="original-price">Any Order</span>
-                        <span class="discounted-price">15% OFF</span>
-                    </div>
+                    <!-- offer prices removed -->
                     <button class="offer-button">Get Code</button>
                 </div>
                 <div class="offer-card">
                     <div class="offer-badge">Bundle Offer</div>
                     <div class="offer-image">
-                        <img src="images/9bce7a0f22af77c0a18d03082ae6de56.jpg_400x400q75.avif" alt="Bundle Offer">
+                        <img loading="lazy" src="images/9bce7a0f22af77c0a18d03082ae6de56.jpg_400x400q75.avif"
+                            alt="Bundle Offer" width="400" height="400">
                     </div>
                     <div class="offer-discount">Buy 2 Get 1</div>
                     <h3>Mix & Match</h3>
                     <p>Buy any 2 bottles and get 1 free on selected flavors!</p>
-                    <div class="offer-price">
-                        <span class="original-price">3 Bottles</span>
-                        <span class="discounted-price">Price of 2</span>
-                    </div>
+                    <!-- offer prices removed -->
                     <button class="offer-button">View Flavors</button>
                 </div>
                 <div class="offer-card">
                     <div class="offer-badge">Subscription</div>
                     <div class="offer-image">
-                        <img src="images/c374054713c3d9b31640dc1270b234c3.jpg_400x400q75.avif" alt="Monthly Subscription">
+                        <img loading="lazy" src="images/c374054713c3d9b31640dc1270b234c3.jpg_400x400q75.avif"
+                            alt="Monthly Subscription" width="400" height="400">
                     </div>
                     <div class="offer-discount">20% OFF</div>
                     <h3>Monthly Plan</h3>
                     <p>Subscribe to our monthly delivery service and save 20% on every order!</p>
-                    <div class="offer-price">
-                        <span class="original-price">Monthly</span>
-                        <span class="discounted-price">20% OFF</span>
-                    </div>
+                    <!-- offer prices removed -->
                     <button class="offer-button">Subscribe</button>
                 </div>
             </div>
@@ -748,7 +938,7 @@
     <!-- Features Section -->
     <section class="features">
         <div class="container">
-            <h2 class="section-title">Why Choose PURELY?</h2>
+            <h2 class="section-title">Why Choose PureWater?</h2>
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">
@@ -788,7 +978,7 @@
             <h2 class="section-title">Find Our Products</h2>
             <div class="locator-content">
                 <div class="locator-text">
-                    <h3>Locate PURELY Near You</h3>
+                    <h3>Locate PureWater Near You</h3>
                     <p>Find our premium water products at stores, restaurants, and retailers near your location.</p>
                     <div class="locator-form">
                         <input type="text" placeholder="Enter your location" class="location-input">
@@ -796,7 +986,8 @@
                     </div>
                 </div>
                 <div class="locator-image">
-                    <img src="images/fdaead0bb6bcc4c14608db5aa9b07de4.png_400x400q75.avif" alt="Store Locator" class="locator-img">
+                    <img loading="lazy" src="images/fdaead0bb6bcc4c14608db5aa9b07de4.png_400x400q75.avif"
+                        alt="Store Locator" class="locator-img" width="400" height="400">
                 </div>
             </div>
         </div>
@@ -805,15 +996,19 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About PURELY</h2>
+            <h2 class="section-title">About PureWater</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>For over 20 years, PURELY has been committed to providing the highest quality drinking water to communities worldwide. Our advanced purification process and commitment to sustainability make us a trusted choice for health-conscious consumers.</p>
-                    <p>We believe that everyone deserves access to clean, refreshing water that not only hydrates but also brings joy to everyday moments.</p>
+                    <p>For over 20 years, PureWater has been committed to providing the highest quality drinking water
+                        to communities worldwide. Our advanced purification process and commitment to sustainability
+                        make us a trusted choice for health-conscious consumers.</p>
+                    <p>We believe that everyone deserves access to clean, refreshing water that not only hydrates but
+                        also brings joy to everyday moments.</p>
                     <button class="about-button">Learn More About Us</button>
                 </div>
                 <div class="about-image">
-                    <img src="images/9bce7a0f22af77c0a18d03082ae6de56.jpg_400x400q75.avif" alt="Water Purification" class="about-img">
+                    <img loading="lazy" src="images/9bce7a0f22af77c0a18d03082ae6de56.jpg_400x400q75.avif"
+                        alt="Water Purification" class="about-img">
                 </div>
             </div>
         </div>
@@ -827,11 +1022,11 @@
                 <div class="contact-info">
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
-                        <span>1-800-PURELY</span>
+                        <span>1-800-PUREWATER</span>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
-                        <span>info@purely.com</span>
+                        <span>info@purewater.com</span>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
@@ -857,7 +1052,7 @@
                 <h2>Contact Us</h2>
                 <p>Get in touch with us for orders, inquiries, or feedback</p>
             </div>
-            
+
             <div class="contact-content">
                 <div class="contact-info">
                     <div class="info-item">
@@ -867,7 +1062,7 @@
                             <p>Karachi, Pakistan</p>
                         </div>
                     </div>
-                    
+
                     <div class="info-item">
                         <div class="info-icon">📞</div>
                         <div class="info-text">
@@ -875,7 +1070,7 @@
                             <p>+92 300 1234567</p>
                         </div>
                     </div>
-                    
+
                     <div class="info-item">
                         <div class="info-icon">✉️</div>
                         <div class="info-text">
@@ -883,7 +1078,7 @@
                             <p>info@drinkingbottles.pk</p>
                         </div>
                     </div>
-                    
+
                     <div class="info-item">
                         <div class="info-icon">🕒</div>
                         <div class="info-text">
@@ -892,7 +1087,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="contact-form-container">
                     <form class="contact-form" id="contactForm">
                         <div class="form-group">
@@ -900,19 +1095,19 @@
                             <input type="text" id="name" name="name" required>
                             <span class="error-message" id="nameError"></span>
                         </div>
-                        
+
                         <div class="form-group">
                             <label for="email">Email Address *</label>
                             <input type="email" id="email" name="email" required>
                             <span class="error-message" id="emailError"></span>
                         </div>
-                        
+
                         <div class="form-group">
                             <label for="phone">Phone Number</label>
                             <input type="tel" id="phone" name="phone">
                             <span class="error-message" id="phoneError"></span>
                         </div>
-                        
+
                         <div class="form-group">
                             <label for="subject">Subject *</label>
                             <select id="subject" name="subject" required>
@@ -926,19 +1121,20 @@
                             </select>
                             <span class="error-message" id="subjectError"></span>
                         </div>
-                        
+
                         <div class="form-group">
                             <label for="message">Message *</label>
-                            <textarea id="message" name="message" rows="5" required placeholder="Tell us about your inquiry..."></textarea>
+                            <textarea id="message" name="message" rows="5" required
+                                placeholder="Tell us about your inquiry..."></textarea>
                             <span class="error-message" id="messageError"></span>
                         </div>
-                        
+
                         <button type="submit" class="submit-btn">
                             <span class="btn-text">Send Message</span>
                             <span class="btn-loading" style="display: none;">Sending...</span>
                         </button>
                     </form>
-                    
+
                     <div class="form-success" id="formSuccess" style="display: none;">
                         <div class="success-icon">✅</div>
                         <h3>Message Sent Successfully!</h3>
@@ -946,7 +1142,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="social-links">
                 <h3>Connect With Us</h3>
                 <div class="social-icons">
@@ -964,8 +1160,9 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>PURELY</h3>
-                    <p>PURELY — Perfect Taste. Experience the difference with our premium drinking water.</p>
+                    <!-- Footer uses the user-supplied raster logo -->
+                    <img src="images/isroo.jpg" alt="PURELY" class="purely-logo">
+                    <p>Pure water, perfect taste. Experience the difference with PURELY premium drinking water.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -1002,11 +1199,12 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 PURELY. All rights reserved.</p>
+                <p>&copy; 2024 PureWater. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <script src="jascripts.js"></script>
 </body>
+
 </html>
