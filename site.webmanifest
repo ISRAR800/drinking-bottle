@@ -1,0 +1,15 @@
+{
+    "name": "Purely",
+    "short_name": "Purely",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#F6FBFF",
+    "theme_color": "#0074D9",
+    "icons": [
+        {
+            "src": "/favicon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml"
+        }
+    ]
+}
