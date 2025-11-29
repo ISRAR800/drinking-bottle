@@ -44,17 +44,17 @@ async function generateFavicons() {
   }
 
   console.log(`Reading SVG from: ${faviconSvg}`);
-  
+
   try {
     for (const size of sizes) {
       const outputPath = path.join(outputDir, size.filename);
       console.log(`→ Generating ${size.filename} (${size.width}×${size.height})...`);
-      
+
       await sharp(faviconSvg)
         .resize(size.width, size.height)
         .png()
         .toFile(outputPath);
-      
+
       console.log(`✓ Created ${size.filename}`);
     }
 
